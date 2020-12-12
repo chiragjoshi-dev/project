@@ -25,7 +25,7 @@
         <header>
             <div class="header--about">
                 <div class="container header--container">
-                <a href="" class="logo">
+                <a href="../MikhailPak/welcome.html" class="logo">
                     <img src="./images/content/logo.png" alt="" class="logo__img">
                 </a>
                 <nav class="header__menu">
@@ -40,13 +40,16 @@
                             <a href="../MikhailPak/team.html" class="menu__link">Portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Shop</a>
+                            <a href="../TaylarOatsProjectFeature1/Page1Main.html" class="menu__link">Shop</a>
                         </li>
                         <li class="menu__item">
                             <a href="../PraveensudharsananProjectfiles/latestnews.html" class="menu__link">Blog</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Contact</a>
+                            <a href="../TaylarOatsProjectFeature1/Page2Main.html" class="menu__link">Contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="../ChiragJoshi/join.html" class="menu__link">Join</a>
                         </li>
                     </ul>
                 </nav>
@@ -111,26 +114,7 @@
                 
             </div>
 
-            <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-                
-                function plusDivs(n) {
-                  showDivs(slideIndex += n);
-                }
-                
-                function showDivs(n) {
-                  var i;
-                  var x = document.getElementsByClassName("mySlides");
-                  if (n > x.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                     x[i].style.display = "none";  
-                  }
-                  x[slideIndex-1].style.display = "block";  
-                }
-                </script>
-                
+           
 
         <div class="upper-sec">
            <section class="sec-1">
@@ -257,22 +241,13 @@
     <button id="btntonext">
         <a href="./join.html"><i class="material-icons">arrow_forward_ios</i></a>
     </button>
-
-    <script>
-        let btntotop = document.querySelector("#btntotop");
-
-        btntotop.addEventListener("click", function () {
-            window.scrollTo({
-                left: 0,
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
     <!--aerrows end-->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/suppliers.js"></script>
 
-        </main>
+
+    </main>
 <!--main tag start-->
 
 <!--footer tag start-->
@@ -308,22 +283,22 @@
                     <div class="footer__col--title">Usefull Links</div>
                     <ul class="footer__links">
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Testimonials</a>
+                            <a href="../PraveensudharsananProjectfiles/customer-review.html" class="footer__link">Testimonials</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">About Us</a>
+                            <a href="../MikhailPak/about.html" class="footer__link">About Us</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Jobs</a>
+                            <a href="../TaylarOatsProjectFeature1/Page3Main.html" class="footer__link">Jobs</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Reviews</a>
+                            <a href="../PraveensudharsananProjectfiles/customer-review.html" class="footer__link">Reviews</a>
+                        </li>
+                        <li class="footer__item--link"> 
+                            <a href="../MikhailPak/team.html" class="footer__link">Team</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Marketing</a>
-                        </li>
-                        <li class="footer__item--link">
-                            <a href="" class="footer__link">Subscribe</a>
+                            <a href="../ChiragJoshi/join.html" class="footer__link">Subscribe</a>
                         </li>
                     </ul>
                 </li>

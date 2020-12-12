@@ -25,8 +25,8 @@ var objPeople = [
 ]
 
 function getinfo() {
-	var email = document.getElementById('email1').value
-	var password = document.getElementById('password1').values
+	var email = document.getElementById('email').value
+	var password = document.getElementById('password').value
 
 	for(var i = 0; i < objPeople.length; i++) {
 		if(email == objPeople[i].email && password == objPeople[i].password) {
@@ -48,9 +48,13 @@ function render(data){
 }
 
 $(document).ready(function(){
-    var coment = [
-        {"name": "Chirag Joshi", "body": "this is first coment 1"}
-    	];
+	var coment = [];
+	
+	if(!localStorage.comentdata){
+		localStorage.comentdata = [];
+	}else{
+		coment = JSON.parse(localStorage.comentdata);
+	}
     
     	for(var i=0;i<coment.length;i++){
 			render(coment[i]);
@@ -61,14 +65,29 @@ $(document).ready(function(){
 			"name": $('#name').val(),
 			"body": $('#body').val()
 		};
-		console.log(addobj);
+
 		coment.push(addobj);
+		localStorage.comentdata = JSON.stringify(coment);
 		render(addobj);
+		$('#name').val('');
+		$('#body').val('');
 	});
 });
+
+
 		
 
-
+// bottom to top
+        let btntotop = document.querySelector("#btntotop");
+        
+        btntotop.addEventListener("click", function () {
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+        
 
 
 

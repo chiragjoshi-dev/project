@@ -25,7 +25,7 @@
         <header>
             <div class="header--about">
                 <div class="container header--container">
-                <a href="" class="logo">
+                <a href="../MikhailPak/welcome.html" class="logo">
                     <img src="./images/content/logo.png" alt="" class="logo__img">
                 </a>
                 <nav class="header__menu">
@@ -40,13 +40,16 @@
                             <a href="../MikhailPak/team.html" class="menu__link">Portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Shop</a>
+                            <a href="../TaylarOatsProjectFeature1/Page1Main.html" class="menu__link">Shop</a>
                         </li>
                         <li class="menu__item">
                             <a href="../PraveensudharsananProjectfiles/latestnews.html" class="menu__link">Blog</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Contact</a>
+                            <a href="../TaylarOatsProjectFeature1/Page2Main.html" class="menu__link">Contact</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="../ChiragJoshi/join.html" class="menu__link">Join</a>
                         </li>
                     </ul>
                 </nav>
@@ -94,13 +97,13 @@
 							<h3 class="legend">Login Here</h3>
 							<div class="input">
 								<span class="fa fa-envelope-o" aria-hidden="true"></span>
-								<input id="email1" type="email" placeholder="Email" name="email" autocomplete="email" required />
+								<input id="email" type="email" placeholder="Email" name="email" autocomplete="email" required />
 							</div>
 							<div class="input">
 								<span class="fa fa-key" aria-hidden="true"></span>
-								<input id="password1" type="password" placeholder="Password" name="password" autocomplete="current-password" required />
+								<input id="password" type="password" placeholder="Password" name="password" autocomplete="current-password" required />
 							</div>
-							<button type="submit" class="btn submit" onclick="getinfo()">Login</button>
+							<button type="button" class="btn submit" onclick="getinfo()">Login</button>
 							<a href="#" class="bottom-text-ls">Forgot Password?</a>
 						</form>
 					</article>
@@ -150,19 +153,27 @@
         
     </div>
     
+    <div class="form2">
     <div class="form1">
         <h1>JOIN OUR COMMUNITY THREAD</h1>
-        <input type="text" id="name" placeholder="Name"><br><br>
-        <textarea rows="3" cols="30" id="body" placeholder="Type Your Comment here"></textarea><br><br>
+
+        <div class="input">
+            <span class="fa fa-user-o" aria-hidden="true"></span>
+            <input type="text" id="name" placeholder="Name" required />
+        </div>
+        <div class="input">
+            <span class="fa fa-comment-o"  aria-hidden="true"></span>
+            <textarea rows="3" cols="30" id="body" placeholder="Type Your Comment here" required></textarea> 
+        </div>
         <input type="button" id="addcoment" value="Comment">
+    </div>
     </div>
 
     <div id="container">
         
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./javascript/join.js"></script>
+    
 
     <!--aerrows start-->
     <button id="btntotop">
@@ -172,20 +183,11 @@
     <button id="btntonext">
         <a href="./sustainability.html"><i class="material-icons">arrow_forward_ios</i></a>
     </button>
-
-    <script>
-        let btntotop = document.querySelector("#btntotop");
-
-        btntotop.addEventListener("click", function () {
-            window.scrollTo({
-                left: 0,
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-    </script>
     <!--aerrows end-->
-    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascript/join.js"></script>
 </main>
 
 <!--footer tag start-->
@@ -221,22 +223,22 @@
                     <div class="footer__col--title">Usefull Links</div>
                     <ul class="footer__links">
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Testimonials</a>
+                            <a href="../PraveensudharsananProjectfiles/customer-review.html" class="footer__link">Testimonials</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">About Us</a>
+                            <a href="../MikhailPak/about.html" class="footer__link">About Us</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Jobs</a>
+                            <a href="../TaylarOatsProjectFeature1/Page3Main.html" class="footer__link">Jobs</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Reviews</a>
+                            <a href="../PraveensudharsananProjectfiles/customer-review.html" class="footer__link">Reviews</a>
+                        </li>
+                        <li class="footer__item--link"> 
+                            <a href="../MikhailPak/team.html" class="footer__link">Team</a>
                         </li>
                         <li class="footer__item--link">
-                            <a href="" class="footer__link">Marketing</a>
-                        </li>
-                        <li class="footer__item--link">
-                            <a href="" class="footer__link">Subscribe</a>
+                            <a href="../ChiragJoshi/join.html" class="footer__link">Subscribe</a>
                         </li>
                     </ul>
                 </li>
