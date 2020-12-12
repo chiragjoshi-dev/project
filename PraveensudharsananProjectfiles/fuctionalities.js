@@ -41,7 +41,7 @@
    window.onload = function () {
      setTimeout(function () {
       document.querySelector(".preloader").style.display = "none";
-     }, 2000);
+     }, 1000);
    }
    
 

@@ -12,6 +12,7 @@
     </head>
 
     <body> 
+        <script src="JSFcns.js"></script>
         <div id="headPicContainer">
             <!----------------------- START HEADER ---------------------------------->
             <div class="header">
@@ -124,7 +125,12 @@
                 <input type="file" id="zanyFile"><br><br>
                 <p class="notes">**Please zip all photos for you fashion portfolio and upload**</p><br><br>
            
-                <button type="button" onclick="FileFunction()">Submit Application!</button>
+                <div class="popup" onclick="FileFunction()">
+                    <button type="button" id= "gobtn">Submit Application!</button><br><br>
+                    <span class="popuptext" id="myPopup">Your Application Has Been Sent!</span>
+                </div>
+
+
             </form>
             
         </main>
