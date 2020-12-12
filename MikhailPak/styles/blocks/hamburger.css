@@ -6,7 +6,7 @@
     display: none;
 }
 
-span, span::after, span::before {
+.open-span, .open-span::after, .open-span::before {
     content: "";
     display: block;
     position: absolute;
@@ -14,15 +14,57 @@ span, span::after, span::before {
     height: 4px;
     background: #9E0000;
     border-radius: 10px;
- 
 }
 
-span::after {
+.open-span::after {
     content: "";
     top: 7px;
 }
 
-span::before {
+.open-span::before {
     content: "";
     top: -7px;
 }
+
+.close-span, .close-span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4.9%;
+    right: 2.2%;
+    width: 30px;
+    height: 4px;
+    background: #9E0000;
+    border-radius: 10px;
+    transform: rotate(-45deg);
+}
+
+.close-span::after {
+    content: "";
+    transform: rotate(90deg);
+}
+
+.hamburger__overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;
+    background: rgba(49, 52, 54, 0.98);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ham__item {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.ham__item:last-child {
+    margin-bottom: 0;
+}
+

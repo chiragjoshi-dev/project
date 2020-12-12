@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     width: 60%;
-    margin-top: 3em;
+    perspective: 1800px;
 }
 
 .team__member {
@@ -21,6 +21,8 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 
 .team__member:hover {
@@ -81,8 +83,13 @@
 
 
 .team__member--one {
+    width: 100%;
+    height: 100%;
     background: url(../../images/content/31.jpg) center center no-repeat;
     background-size: cover;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .team__member--two {
     background: url(../../images/content/32.jpg) center center no-repeat;
@@ -103,4 +110,35 @@
 .team__member--six {
     background: url(../../images/content/36.jpg) center center no-repeat;
     background-size: cover;
+}
+
+.team__member.is-flipped {
+    transform: rotateY(-180deg);
+}
+
+.team__member.is-flipped .card__face--front {
+    display: none;
+}
+
+.team__member.is-flipped .card__face--back {
+    display: block;
+    background: rgba(49, 52, 54, 0.98);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+.team__member .card__face--back{
+    display: none;
+}
+
+.card__face--back {
+    transform: scale(-1, 1);
+}
+
+.member__email {
+    margin-bottom: 1em;
 }

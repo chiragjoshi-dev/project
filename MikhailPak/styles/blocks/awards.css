@@ -22,6 +22,8 @@
 .awards__list {
     display: flex;
     margin-bottom: 8em;
+    width: inherit;
+    padding-left: 25px;
 }
 
 .award__item {
@@ -36,8 +38,10 @@
     padding: 100px 20px 50px;
     background-color: #fff;
     transition: background-color 0.5s, color 0.5s;
+    min-height: 26em;
 }
 
+.slick-slide
 
 .award__item:last-child {
     margin-right: 0;

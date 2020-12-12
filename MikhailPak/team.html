@@ -20,7 +20,7 @@
                                 <a href="./welcome.html" class="menu__link">Home</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">The brand</a>
+                                <a href="./about.html" class="menu__link">The brand</a>
                             </li>
                             <li class="menu__item">
                                 <a href="" class="menu__link">Portfolio</a>
@@ -32,7 +32,10 @@
                                 <a href="" class="menu__link">Blog</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">Contact</a>
+                                <a href="../TaylarOatsProjectFeature1/Page2Main.html" class="menu__link">Contact</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="../ChiragJoshi/join.html" class="menu__link">Join</a>
                             </li>
                         </ul>
                     </nav>
@@ -55,8 +58,23 @@
                     <div class="hamburger">
                         <input id="menu__toggle" type="checkbox" class="menu__input">
                         <label for="menu__toggle" id="menu__btn">
-                            <span></span>
+                            <span class="open-span"></span>
                         </label>
+                        <div class="hamburger__overlay">
+                            <input id="menu__toggle--close" type="checkbox" class="menu__input">
+                            <label for="menu__toggle--close" id="menu__btn--close">
+                                <span class="close-span"></span>
+                            </label>
+                            <ul class="hamburger__list">
+                                <li class="ham__item"><a href="" class="ham__link">Home</a></li>
+                                <li class="ham__item"><a href="" class="ham__link">The Brand</a></li>
+                                <li class="ham__item"><a href="" class="ham__link">Portfolio</a></li>
+                                <li class="ham__item"><a href="" class="ham__link">Shop</a></li>
+                                <li class="ham__item"><a href="" class="ham__link">Blog</a></li>
+                                <li class="ham__item"><a href="" class="ham__link">Contact</a></li>
+                                <li class="ham__item"><a href="" class="ham__link">Join</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,43 +84,77 @@
                 </div>
             </section>
             <section class="team">
-                <ul class="team_list">
-                    <li class="team__member team__member--one">
-                        <div class="member__info">
-                            <a class="member__name">elizabeth baker</a>
-                            <h4 class="member__occ">Founder</h4>
+                <ul class="team_list" id="teamList">
+                    <li class="team__member">
+                        <div class="team__member--one card__face--front">
+                            <div class="member__info">
+                                <a class="member__name">elizabeth baker</a>
+                                <h4 class="member__occ">Founder</h4>
+                            </div>
+                        </div>
+                        <div class="team__member--one card__face--back">
+                            <h3 class="member__email">baker@gmail.com</h3>
+                            <h3 class="member__phone">+1 123 123-33-44</h3>
                         </div>
                     </li>
-                    <li class="team__member team__member--two">
-                        <div class="member">
+                    <li class="team__member">
+                        <div class="team__member--one card__face--front team__member--two">
                             <div class="member__info">
                                 <a class="member__name">jill peterson</a>
                                 <h4 class="member__occ">Finance Manager</h4>
                             </div>
                         </div>
-                    </li>
-                    <li class="team__member team__member--three">
-                        <div class="member__info">
-                            <a class="member__name">patricia hughes</a>
-                            <h4 class="member__occ">Head of Marketing</h4>
+                        <div class="team__member--one card__face--back">
+                            <h3 class="member__email">peterson@gmail.com</h3>
+                            <h3 class="member__phone">+1 123 123-33-44</h3>
                         </div>
                     </li>
-                    <li class="team__member team__member--four">
-                        <div class="member__info">
-                            <a class="member__name">jessica wright</a>
-                            <h4 class="member__occ">Store Assisstant</h4>
+                    <li class="team__member">
+                        <div class="team__member--one card__face--front team__member--three">
+                            <div class="member__info">
+                                <a class="member__name">patricia hughes</a>
+                                <h4 class="member__occ">Head of Marketing</h4>
+                            </div>
+                        </div>
+                        <div class="team__member--one card__face--back">
+                            <h3 class="member__email">hughes@gmail.com</h3>
+                            <h3 class="member__phone">+1 123 123-33-44</h3>
                         </div>
                     </li>
-                    <li class="team__member team__member--five">
-                        <div class="member__info">
-                            <a class="member__name">heather adams</a>
-                            <h4 class="member__occ">Sales Manager</h4>
+                    <li class="team__member">
+                        <div class="team__member--one card__face--front team__member--four">
+                            <div class="member__info">
+                                <a class="member__name">jessica wright</a>
+                                <h4 class="member__occ">Store Assisstant</h4>
+                            </div>
+                        </div>
+                        <div class="team__member--one card__face--back">
+                            <h3 class="member__email">wright@gmail.com</h3>
+                            <h3 class="member__phone">+1 123 123-33-44</h3>
                         </div>
                     </li>
-                    <li class="team__member team__member--six">
-                        <div class="member__info">
-                            <a class="member__name">pamela green</a>
-                            <h4 class="member__occ">Office Manager</h4>
+                    <li class="team__member">
+                        <div class="team__member--one card__face--front team__member--five">
+                            <div class="member__info">
+                                <a class="member__name">heather adams</a>
+                                <h4 class="member__occ">Sales Manager</h4>
+                            </div>
+                        </div>
+                        <div class="team__member--one card__face--back">
+                            <h3 class="member__email">adams@gmail.com</h3>
+                            <h3 class="member__phone">+1 123 123-33-44</h3>
+                        </div>
+                    </li>
+                    <li class="team__member">
+                        <div class="team__member--one card__face--front team__member--six">
+                            <div class="member__info">
+                                <a class="member__name">pamela green</a>
+                                <h4 class="member__occ">Office Manager</h4>
+                            </div>
+                        </div>
+                        <div class="team__member--one card__face--back">
+                            <h3 class="member__email">green@gmail.com</h3>
+                            <h3 class="member__phone">+1 123 123-33-44</h3>
                         </div>
                     </li>
                 </ul>
@@ -143,16 +195,16 @@
                                 <a href="" class="footer__link">Testimonials</a>
                             </li>
                             <li class="footer__item--link">
-                                <a href="" class="footer__link">About Us</a>
+                                <a href="../MikhailPak/about.html" class="footer__link">About Us</a>
                             </li>
                             <li class="footer__item--link">
-                                <a href="" class="footer__link">Jobs</a>
+                                <a href="../TaylarOatsProjectFeature1/Page3Main.html" class="footer__link">Jobs</a>
                             </li>
                             <li class="footer__item--link">
-                                <a href="" class="footer__link">Reviews</a>
+                                <a href="../PraveensudharsananProjectfiles/customer-review.html" class="footer__link">Reviews</a>
                             </li>
                             <li class="footer__item--link">
-                                <a href="" class="footer__link">Marketing</a>
+                                <a href="./team.html" class="footer__link">Team</a>
                             </li>
                             <li class="footer__item--link">
                                 <a href="" class="footer__link">Subscribe</a>
@@ -198,5 +250,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./js/flip.js"></script>
 </body>
 </html>
